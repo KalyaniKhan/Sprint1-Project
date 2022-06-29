@@ -1,0 +1,38 @@
+
+<div class="container d-flex">
+    <table style="border-bottom: 2px;">
+        <tr>
+            <td><a><img src="../../assets/Electronics.PNG" height="90px" width="70px" style="margin: 0px 40px 0px 15px;"></a></td>
+            <td><a><img src="../../assets/Grocery.PNG" height="90px" width="70px" style="margin: 0px 40px 0px 40px;"></a></td>
+            <td><a><img src="../../assets/Applinces.PNG" height="90px" width="70px" style="margin: 0px 40px 0px 40px;"></a></td>
+            <td><a><img src="../../assets/Beauty,Toys & More.PNG" height="90px" width="70px" style="margin: 0px 40px 0px 40px;"></a></td>
+            <td><a><img src="../../assets/Fashion.PNG" height="90px" width="70px" style="margin: 0px 40px 0px 40px;"></a></td>
+            <td><a><img src="../../assets/Home.PNG" height="90px" width="70px" style="margin: 0px 40px 0px 40px;"></a></td>
+        </tr>
+        <tr>
+            <td style="text-align:center;"><a>Electronics</a></td>
+            <td style="text-align:center;"><a>Grocery</a></td>
+            <td style="text-align:center;"><a>Applinces</a></td>
+            <td style="text-align:center;"><a>Beauty, Toys & More</a></td>
+            <td style="text-align:center;"><a>Fashion</a></td>
+            <td style="text-align:center;"><a>Home</a></td>
+          </tr>
+     </table>
+    </div>
+    
+    
+    <div class="row mt-5">
+        <div class="col-md-4 mb-3" *ngFor="let product of products">
+            <div class="card" style="width: 16rem; height:26rem">
+                <img class="card-img-top" src="../../assets/{{product.productImage}}" style="height: 15rem;" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">{{product.productName}}</h5>
+                    <p class="card-text">{{product.productDescription}}</p>
+                    <p><strong>Price:</strong>$.{{product.productMrp}}</p>
+                    <a href="account" class="btn btn-primary">Buy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- start features Area -->
